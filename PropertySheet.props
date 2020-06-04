@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <QGAME_ROOT_DIR>$(SolutionDir)</QGAME_ROOT_DIR>
+    <OUT_PUT_NAME>_Output_\$(Configuration)\$(PlatformTarget)\</OUT_PUT_NAME>
+    <INTERMEDIATE_NAME>_Intermediate_\$(Configuration)\$(ProjectName)\$(PlatformTarget)\</INTERMEDIATE_NAME>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(QGAME_ROOT_DIR)$(OUT_PUT_NAME)</OutDir>
+    <IntDir>$(QGAME_ROOT_DIR)$(INTERMEDIATE_NAME)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="QGAME_ROOT_DIR">
+      <Value>$(QGAME_ROOT_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OUT_PUT_NAME">
+      <Value>$(OUT_PUT_NAME)</Value>
+    </BuildMacro>
+    <BuildMacro Include="INTERMEDIATE_NAME">
+      <Value>$(INTERMEDIATE_NAME)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
